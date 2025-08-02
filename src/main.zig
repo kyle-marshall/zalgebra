@@ -36,6 +36,35 @@ pub const Vec4_i32 = vector.Vec4_i32;
 pub const Vec4_usize = vector.Vec4_usize;
 pub const GenericVector = vector.GenericVector;
 
+/// Deprecated: Use `mat3.Mat3` instead.
+pub const Mat3 = mat3.Mat3;
+/// Deprecated: Use `mat3.Mat3_f64` instead.
+pub const Mat3_f64 = mat3.Mat3_f64;
+/// Deprecated: Use `mat3.Mat3x3` instead.
+pub const Mat3x3 = mat3.Mat3x3;
+
+/// Deprecated: Use `mat4.Mat4` instead.
+pub const Mat4 = mat4.Mat4;
+/// Deprecated: Use `mat4.Mat4_f64` instead.
+pub const Mat4_f64 = mat4.Mat4_f64;
+/// Deprecated: Use `mat4.Mat4x4` instead.
+pub const Mat4x4 = mat4.Mat4_i32;
+/// Deprecated: Use `mat4.Mat4.perspective` instead.
+pub const perspective = Mat4.perspective;
+/// Deprecated: Use `mat4.Mat4.perspectiveReversedZ` instead.
+pub const perspectiveReversedZ = Mat4.perspectiveReversedZ;
+/// Deprecated: Use `mat4.Mat4.orthographic` instead.
+pub const orthographic = Mat4.orthographic;
+/// Deprecated: Use `mat4.Mat4.lookAt` instead.
+pub const lookAt = Mat4.lookAt;
+
+/// Deprecated: Use `quaternion.Quat` instead.
+pub const Quat = quaternion.Quat;
+/// Deprecated: Use `quaternion.Quat_f64` instead.
+pub const Quat_f64 = Quaternion(f64);
+/// Deprecated: Use `quaternion.Quaternion` instead.
+pub const Quaternion = quaternion.Quaternion;
+
 /// Convert degrees to radians.
 pub fn toRadians(degrees: anytype) @TypeOf(degrees) {
     const T = @TypeOf(degrees);
